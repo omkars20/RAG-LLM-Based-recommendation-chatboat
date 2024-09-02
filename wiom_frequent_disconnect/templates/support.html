@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Wiom Customer Support</title>
+</head>
+<body>
+    <h1>Wiom Customer Support</h1>
+    <form method="POST">
+        <label for="query">How can we assist you today?</label><br><br>
+        <textarea name="query" rows="5" cols="50" required></textarea><br><br>
+        <input type="submit" value="Get Help">
+    </form>
+    {% if response %}
+        <h2>Response:</h2>
+        <p>{{ response }}</p>
+    {% endif %}
+</body>
+</html>

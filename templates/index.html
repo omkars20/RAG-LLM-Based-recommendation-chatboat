@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>RAG Product Recommendation</title>
+</head>
+<body>
+    <h1>Find Your Perfect Product</h1>
+    <form method="POST">
+        <input type="text" name="query" placeholder="Describe what you're looking for" required>
+        <input type="submit" value="Get Recommendation">
+    </form>
+    
+    {% if recommendation %}
+        <h2>Recommendation:</h2>
+        <p>{{ recommendation }}</p>
+    {% endif %}
+</body>
+</html>
